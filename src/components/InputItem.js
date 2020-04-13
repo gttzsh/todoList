@@ -9,10 +9,30 @@ class InputItem extends React.Component {
 
   }
   render() {
-    console.log("InputItem.js", this.props);
     return (
-      <div><input type="text"/><button>新增</button></div>
+      <div>
+        <input className="inputItem" value={this.state.title} onChange={this.changeHander}/>
+        <button onClick={this.clickHander}>新增</button>
+      </div>
     )
+  }
+  changeHander = (e) => {
+    const newTitle = e.target.value
+    this.setState({
+      title: newTitle
+    })
+    //console.log("title",this.state.title);
+  }
+  clickHander = () => {
+    //console.log("InputItem",this.props)
+    const { addItem } = this.props
+    addItem(this.state.title)
+
+    this.setState({
+      title: ''
+    })
+
+
   }
 }
 

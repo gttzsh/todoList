@@ -6,14 +6,29 @@ body li{
   width: 400px;
   border: 3px solid #D3D3D3;
   color: #000;
+  margin: auto;
 }
 .todolist header {
   padding: 10px 10px;
   border-bottom: 3px solid #D3D3D3;
 }
+button {
+  padding: 3px 10px 3px 10px;
+  margin-left: 10px;
+}
+section {
+  padding: 10px;
+}
+.inputItem {
+  width: 200px;
+  height: 20px;
+}
+section ul {
+  padding-left: 0px;
+}
 section li {
   padding: 0px 10px 0px 0px;
 }
-section li span {
+section li a {
   float: right;
 }

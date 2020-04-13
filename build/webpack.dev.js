@@ -22,7 +22,7 @@ module.exports = smart(webpackCommonConf, {
         })
     ],
     devServer: {
-        port: 8115,
+        port: 8268,
         host: '0.0.0.0',
         historyApiFallback: true,
         progress: true,  // 显示打包的进度条
