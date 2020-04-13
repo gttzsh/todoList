@@ -1,0 +1,19 @@
+body li{
+  list-style-type: none;
+
+}
+.todolist {
+  width: 400px;
+  border: 3px solid #D3D3D3;
+  color: #000;
+}
+.todolist header {
+  padding: 10px 10px;
+  border-bottom: 3px solid #D3D3D3;
+}
+section li {
+  padding: 0px 10px 0px 0px;
+}
+section li span {
+  float: right;
+}
