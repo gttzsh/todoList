@@ -44,6 +44,10 @@ class App extends React.Component {
   }
   //新增一项
   addItem = (title) => {
+    if(title == ''){
+      alert('list不能为空')
+      return
+    }
     const list = this.state.list
     this.setState({
       list: list.concat({
